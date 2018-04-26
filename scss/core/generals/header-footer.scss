@@ -1,0 +1,140 @@
+#header{
+	background-color: #000000;
+    color: #FFFFFF;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+    .gwr{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100px;
+		.w-search{
+			order: 1;
+			display: flex;
+			input,button{
+				height: 33px;
+				padding: 0 10px;
+			}
+			button{
+				background-color: #B9BECA;
+				text-transform: uppercase;
+				margin-left: 4px;
+				font-weight: 600;
+			}
+		}
+		.logo{
+			font-size: 0;
+			order: 2;
+		}
+		nav{
+			order: 3;
+			text-transform: uppercase;
+			ul{
+				display: flex;
+				align-items: center;
+				li{
+					padding-left: 14px;
+					position: relative;
+					display: flex;
+					align-items: center;
+					&:before{
+						content: '';
+						font-size: 20px;
+						background-color: #57BCC7;
+						width: 4px;
+						height: 4px;
+						margin-right: 4px;
+					}
+					a{
+
+					}
+				}
+			}
+		}
+    }
+}
+
+#footer{
+    background-color: #000;
+	font-size: 15px;
+    color: #FFFFFF;
+	padding: 40px 0 10px 0;
+	margin-top: auto;
+	.gwr{
+		display: flex;
+		>*{
+			width: 40%;
+		}
+	}
+	h2{
+		&:after{
+			margin: 1rem auto 4rem 0;
+			width: 120px;
+		}
+	}
+
+	.cotiza{
+		margin-left: 20%;
+	}
+	.list-zone{
+		padding-left: 2rem;
+		li{
+			margin-bottom: 2rem;
+			text-align: justify;
+			h3{
+				text-transform: uppercase;
+				font-weight: 600;
+				font-size: 1.85rem;
+				margin-bottom: .25rem;
+			}
+		}
+	}
+
+	.select2-container{
+		width: 300px !important;
+		margin-bottom: 3rem;
+		border: 1px solid #fff;
+		.select2-selection--single{
+			.select2-selection__rendered{
+				padding: 10px 20px;
+				color: #57BCC7;
+
+			}
+		}
+	}
+
+	.select2-container--default{
+		.select2-selection--single{
+			background-color: transparent;
+			border-radius: 0;
+			height: auto;
+			.select2-selection__arrow{
+				height: 48px;
+				background-color: #FFF;
+				width: 30px;
+				b{
+					border-width: 10px 6px 0 6px;
+					margin-left: -6px;
+					margin-right: -6px;
+					margin-top: -4px;
+					border-color: #000 transparent transparent transparent;
+				}
+			}
+		}
+	}
+
+	button {
+		background-color: #57BCC7;
+		text-transform: uppercase;
+		padding: .5rem 2rem;
+		color: #000;
+	}
+}

@@ -1,0 +1,60 @@
+@mixin icon(){
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@function remy($value) {
+	@return ($value / 16px) *1rem;
+}
+
+@keyframes flash{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	99% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes type{ 
+	from { 
+		width: 0; 
+	} 
+} 
+
+@keyframes type2{
+ 	0%{
+ 		width: 0;
+ 	}
+  	50%{
+  		width: 0;
+  	}
+  	100%{ 
+  		width: 100; 
+  	} 
+}
+
+@keyframes blink{
+	to{
+		opacity: .0;
+	}
+}
